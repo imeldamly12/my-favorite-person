@@ -1,0 +1,1433 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Georgia, serif;
+
+    background: #fff8f8;
+
+    color: #3d2929;
+
+    overflow-x: hidden;
+}
+
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(50, 20, 30, 0.45),
+            rgba(50, 20, 30, 0.45)
+        ),
+        url("assets/foto1.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+.overlay {
+
+    color: white;
+
+    padding: 30px;
+
+    max-width: 800px;
+
+}
+
+
+.small-title {
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 70px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.subtitle {
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+}
+
+
+.hero button {
+
+    margin-top: 35px;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #9b5264;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.hero button:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+
+/* ========================================
+   GENERAL SECTION
+======================================== */
+
+section {
+
+    padding: 100px 8%;
+
+}
+
+
+.section-label {
+
+    text-align: center;
+
+    letter-spacing: 4px;
+
+    font-size: 12px;
+
+    color: #b56b7c;
+
+    margin-bottom: 15px;
+
+}
+
+
+section h2 {
+
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+.love-text {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    line-height: 2;
+
+    white-space: pre-line;
+
+}
+
+
+
+/* ========================================
+   PHOTO GALLERY
+======================================== */
+
+.gallery {
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+}
+
+
+.gallery h2 {
+
+    margin-bottom: 25px;
+
+}
+
+
+.gallery-subtitle {
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+
+    color: #80666b;
+
+    font-size: 16px;
+
+    font-style: italic;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+/* PHOTO SLIDER */
+
+.photo-slider {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: flex;
+
+    gap: 18px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+
+    padding: 5px 5px 20px;
+
+}
+
+
+.photo-slider::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+
+
+/* SATU KOLOM = 2 FOTO */
+
+.photo-column {
+
+    flex: 0 0 430px;
+
+    width: 430px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    scroll-snap-align: start;
+
+}
+
+
+
+/* FOTO */
+
+.photo-column img {
+
+    width: 430px;
+
+    height: 270px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    display: block;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+.photo-column img:hover {
+
+    transform: scale(1.02);
+
+    box-shadow:
+        0 15px 35px rgba(80, 40, 50, 0.18);
+
+}
+
+
+
+/* PETUNJUK */
+
+.gallery-hint {
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+
+    color: #a47782;
+
+    font-size: 13px;
+
+    margin-top: 20px;
+
+}
+
+
+
+/* ========================================
+   VIDEO
+======================================== */
+
+.video-section {
+
+    background: #f8e9ed;
+
+    text-align: center;
+
+    overflow: hidden;
+
+}
+
+
+.video-section h2 {
+
+    margin-bottom: 25px;
+
+}
+
+
+.video-subtitle {
+
+    font-family: Arial, sans-serif;
+
+    color: #80666b;
+
+    font-size: 16px;
+
+    font-style: italic;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+/* VIDEO SLIDER */
+
+.video-slider {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: flex;
+
+    gap: 20px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+
+    padding: 5px 5px 20px;
+
+}
+
+
+.video-slider::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+
+
+/* VIDEO CARD */
+
+.video-card {
+
+    flex: 0 0 360px;
+
+    width: 360px;
+
+    background: white;
+
+    padding: 12px;
+
+    border-radius: 22px;
+
+    scroll-snap-align: start;
+
+    box-shadow:
+        0 10px 30px rgba(70, 40, 50, 0.10);
+
+    text-align: left;
+
+}
+
+
+
+/* VIDEO PREVIEW */
+
+.video-card video {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 16px;
+
+    background: #222;
+
+    cursor: pointer;
+
+}
+
+
+
+/* JUDUL VIDEO */
+
+.video-card h3 {
+
+    color: #4b3037;
+
+    font-size: 21px;
+
+    margin: 15px 5px 7px;
+
+}
+
+
+
+/* DESKRIPSI VIDEO */
+
+.video-card p {
+
+    font-family: Arial, sans-serif;
+
+    color: #80666b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 0 5px 8px;
+
+}
+
+
+
+/* PETUNJUK VIDEO */
+
+.video-hint {
+
+    font-family: Arial, sans-serif;
+
+    color: #a47782;
+
+    font-size: 13px;
+
+    margin-top: 20px;
+
+}
+
+
+
+/* ========================================
+   VIDEO POPUP
+======================================== */
+
+.video-modal {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 9999;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+}
+
+
+
+/* POPUP AKTIF */
+
+.video-modal.active {
+
+    display: flex;
+
+}
+
+
+
+/* VIDEO BESAR */
+
+.video-modal video {
+
+    max-width: 95vw;
+
+    max-height: 90vh;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    display: block;
+
+}
+
+
+
+/* TOMBOL CLOSE */
+
+.close-video {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 30px;
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 32px;
+
+    cursor: pointer;
+
+    z-index: 10000;
+
+    transition: 0.3s;
+
+}
+
+
+.close-video:hover {
+
+    background: rgba(255, 255, 255, 0.3);
+
+    transform: scale(1.1);
+
+}
+
+
+
+/* ========================================
+   TIMELINE
+======================================== */
+
+.timeline-container {
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+.timeline-item {
+
+    display: flex;
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+
+    align-items: flex-start;
+
+}
+
+
+.timeline-item span {
+
+    min-width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: #b56b7c;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.timeline-item h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 24px;
+
+}
+
+
+.timeline-item p {
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* ========================================
+   LETTER
+======================================== */
+
+.letter {
+
+    background: #ffffff;
+
+    text-align: center;
+
+}
+
+
+.letter-box {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 50px;
+
+    background: #fff8f8;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.letter-box p {
+
+    font-size: 18px;
+
+    line-height: 2;
+
+    white-space: pre-line;
+
+}
+
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background: #3d2929;
+
+    color: white;
+
+}
+
+
+footer h2 {
+
+    margin-bottom: 15px;
+
+}
+
+
+footer p {
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+
+    /* BODY */
+
+    body {
+
+        overflow-x: hidden;
+
+    }
+
+
+    /* SECTION */
+
+    section {
+
+        padding: 70px 15px;
+
+    }
+
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+
+        min-height: 100vh;
+
+        padding: 20px;
+
+        background-position: center;
+
+    }
+
+
+    .overlay {
+
+        padding: 20px;
+
+    }
+
+
+    .small-title {
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 42px;
+
+        line-height: 1.2;
+
+        margin-bottom: 18px;
+
+    }
+
+
+    .subtitle {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+    }
+
+
+    .hero button {
+
+        margin-top: 25px;
+
+        padding: 12px 24px;
+
+        font-size: 14px;
+
+    }
+
+
+
+    /* =========================
+       GENERAL
+    ========================= */
+
+    .section-label {
+
+        font-size: 10px;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 12px;
+
+    }
+
+
+    section h2 {
+
+        font-size: 32px;
+
+        line-height: 1.3;
+
+        margin-bottom: 30px;
+
+    }
+
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+
+        width: 100%;
+
+        padding-left: 10px;
+
+        padding-right: 10px;
+
+    }
+
+
+    .love-text {
+
+        font-size: 15px;
+
+        line-height: 1.9;
+
+        text-align: center;
+
+    }
+
+
+
+    /* =========================
+       PHOTO
+    ========================= */
+
+    .gallery {
+
+        width: 100%;
+
+        overflow: hidden;
+
+        padding: 70px 0;
+
+    }
+
+
+    .gallery .section-label,
+    .gallery h2,
+    .gallery-subtitle {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+
+    .gallery h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .gallery-subtitle {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        margin-top: -15px;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    /* PHOTO SLIDER */
+
+    .photo-slider {
+
+        width: 100%;
+
+        display: flex;
+
+        gap: 12px;
+
+        overflow-x: auto;
+
+        padding: 5px 15px 15px;
+
+        scroll-behavior: smooth;
+
+        scroll-snap-type: x mandatory;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+
+    }
+
+
+    .photo-slider::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+
+    /* 2 FOTO KE BAWAH */
+
+    .photo-column {
+
+        flex: 0 0 280px;
+
+        width: 280px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        scroll-snap-align: start;
+
+    }
+
+
+    .photo-column img {
+
+        width: 280px;
+
+        height: 190px;
+
+        object-fit: cover;
+
+        border-radius: 17px;
+
+        display: block;
+
+    }
+
+
+    .gallery-hint {
+
+        padding: 0 15px;
+
+        margin-top: 15px;
+
+        font-size: 11px;
+
+        line-height: 1.5;
+
+    }
+
+
+
+    /* =========================
+       VIDEO
+    ========================= */
+
+    .video-section {
+
+        width: 100%;
+
+        overflow: hidden;
+
+        padding: 70px 0;
+
+    }
+
+
+    .video-section .section-label,
+    .video-section h2,
+    .video-subtitle {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+
+    .video-section h2 {
+
+        font-size: 32px;
+
+        line-height: 1.3;
+
+    }
+
+
+    .video-subtitle {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        margin-top: -15px;
+
+        margin-bottom: 25px;
+
+    }
+
+
+    /* VIDEO SLIDER */
+
+    .video-slider {
+
+        width: 100%;
+
+        display: flex;
+
+        gap: 15px;
+
+        overflow-x: auto;
+
+        padding: 5px 15px 20px;
+
+        scroll-behavior: smooth;
+
+        scroll-snap-type: x mandatory;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+
+    }
+
+
+    .video-slider::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+
+    /* VIDEO CARD */
+
+    .video-card {
+
+        flex: 0 0 285px;
+
+        width: 285px;
+
+        padding: 10px;
+
+        border-radius: 18px;
+
+        scroll-snap-align: start;
+
+    }
+
+
+    /* VIDEO PREVIEW */
+
+    .video-card video {
+
+        width: 100%;
+
+        height: 190px;
+
+        object-fit: cover;
+
+        border-radius: 14px;
+
+        display: block;
+
+    }
+
+
+    .video-card h3 {
+
+        font-size: 19px;
+
+        margin: 13px 5px 7px;
+
+    }
+
+
+    .video-card p {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        margin: 0 5px 5px;
+
+    }
+
+
+    .video-hint {
+
+        padding: 0 15px;
+
+        margin-top: 15px;
+
+        font-size: 11px;
+
+        line-height: 1.5;
+
+    }
+
+
+
+    /* =========================
+       VIDEO POPUP HP
+    ========================= */
+
+    .video-modal {
+
+        padding: 15px;
+
+    }
+
+
+    .video-modal video {
+
+        max-width: 96vw;
+
+        max-height: 85vh;
+
+        width: auto;
+
+        height: auto;
+
+        object-fit: contain;
+
+        border-radius: 8px;
+
+    }
+
+
+    .close-video {
+
+        top: 15px;
+
+        right: 15px;
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 28px;
+
+    }
+
+
+
+    /* =========================
+       TIMELINE
+    ========================= */
+
+    .timeline {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .timeline-container {
+
+        width: 100%;
+
+    }
+
+
+    .timeline-item {
+
+        gap: 18px;
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .timeline-item span {
+
+        min-width: 42px;
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 13px;
+
+    }
+
+
+    .timeline-item h3 {
+
+        font-size: 20px;
+
+        margin-bottom: 7px;
+
+    }
+
+
+    .timeline-item p {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+
+
+    /* =========================
+       LETTER
+    ========================= */
+
+    .letter {
+
+        padding: 70px 15px;
+
+    }
+
+
+    .letter-box {
+
+        width: 100%;
+
+        padding: 30px 20px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .letter-box p {
+
+        font-size: 15px;
+
+        line-height: 1.9;
+
+    }
+
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+
+        padding: 45px 20px;
+
+    }
+
+
+    footer h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    footer p {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+
+    }
+
+}
+
+/* ========================================
+   MUSIC BUTTON
+======================================== */
+
+.music-button {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #b56b7c;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    z-index: 9998;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+
+}
+
+
+.music-button:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+.music-button.playing {
+
+    animation: musicPulse 1.5s infinite;
+
+}
+
+
+@keyframes musicPulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+
+/* HP */
+
+@media (max-width: 600px) {
+
+    .music-button {
+
+        width: 45px;
+
+        height: 45px;
+
+        right: 15px;
+
+        bottom: 15px;
+
+        font-size: 19px;
+
+    }
+
+}
